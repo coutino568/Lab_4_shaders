@@ -1,4 +1,7 @@
 # GLSL
+from math import sen, cos
+
+
 
 vertex_shader = """
 #version 450
@@ -61,9 +64,11 @@ in vec2 outTexCoords;
 
 uniform sampler2D tex;
 
-
+#usara sen delta time par determinar la intensidad 
 void main()
 {
-    fragColor = vec4(outColor, 1) * texture(tex, outTexCoords);
+    
 }
 """
+
+
